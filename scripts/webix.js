@@ -191,7 +191,7 @@ var labelActiveRoutes = {
   maxWidth: 1000,
   view: "toolbar",
   type: "space",
-  elements: [{ view: "label", label: "Ενεργές διαδρομές" }],
+  elements: [{ view: "label", label: "Active Routes" }],
 };
 
 var toolbarActiveRoutes = {
@@ -292,7 +292,7 @@ var emlist = [
   {
     person: {
       email: "antonis.adraktas@gmail.com",
-      name: "Αντώνης Αδρακτάς",
+      name: "Antonis Adraktas",
       country: "Ελλάδα",
       phone: "+30 6947474747",
       resDate: "2020.12.15",
