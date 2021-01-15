@@ -88,6 +88,11 @@
         background-color: green;
       }
     </style>
+    <script
+      type="text/javascript"
+      src="//script.crazyegg.com/pages/scripts/0102/0070.js"
+      async="async"
+    ></script>
   </head>
 
   <body>
@@ -165,9 +170,11 @@
         storageBucket: "sdy60-erg2-a98ac.appspot.com",
         messagingSenderId: "156848831724",
         appId: "1:156848831724:web:cbf3f95310d5f25380b9c9",
+        measurementId: "G-XZ80QQQHL5",
       };
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
       // create firebase connection, and assign it to webix
       webix.firebase = firebase.database();
 

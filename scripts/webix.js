@@ -484,6 +484,7 @@ var fields = [
     view: "button",
     value: "Edit",
     click: function () {
+      analytics.logEvent("ActiveRoute", { name: "Edit-btn" });
       webix.message("Not completed in this version");
     },
   },
@@ -494,6 +495,7 @@ var fields = [
     value: "Save",
     click: function () {
       webix.message("Not completed in this version");
+      analytics.logEvent("ActiveRoute", { name: "Save-btn" });
     },
   },
 ];
@@ -514,6 +516,7 @@ var details = {
           width: 100,
           click: function () {
             $$("master-view").show();
+            analytics.logEvent("ActiveRoute", { name: "ShowDetails" });
           },
         },
       ],
@@ -582,6 +585,9 @@ var mapActiveRoutes = {
           value: "Show only start/end of route",
           click: function () {
             webix.message("Not completed in this version");
+            analytics.logEvent("ActiveRouteMaps", {
+              name: "Show only start/end of route",
+            });
           },
         },
         {
@@ -589,6 +595,9 @@ var mapActiveRoutes = {
           value: "Show all points of interest",
           click: function () {
             webix.message("Not completed in this version");
+            analytics.logEvent("ActiveRouteMaps", {
+              name: "Show all points of interest",
+            });
           },
         },
         {
@@ -596,6 +605,7 @@ var mapActiveRoutes = {
           value: "Clear map",
           click: function () {
             webix.message("Not completed in this version");
+            analytics.logEvent("ActiveRouteMaps", { name: "Clear map" });
           },
         },
       ],
